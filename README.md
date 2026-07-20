@@ -21,7 +21,7 @@
 The project uses JavaScript modules, so serve it through a local web server instead of opening `index.html` directly.
 
 ```bash
-npx serve .
+[npx serve .](https://skylartrangla.github.io/tokyo.lastbus/)
 ```
 
 Then open the local URL printed in the terminal.
