@@ -2,7 +2,7 @@
 
 > A procedural night-scene experiment exploring how weather, lighting, sound, and small environmental details change the feeling of waiting for the last bus.
 
-**Last Bus** is an interactive Tokyo bus-stop mood study made with Three.js. Change the rain, fog, lighting, traffic, ambient sound, scene seed, and time of night—then enter Photo Mode to compose and save a frame.
+**Last Bus** is an interactive Tokyo bus-stop mood study made with Three.js. Change the rain, fog, lighting, traffic, ambient sound, scene seed, and time of night-then enter Photo Mode to compose and save a frame.
 
 ## Features
 
@@ -55,14 +55,14 @@ Recommended web-asset targets:
 
 ## Controls
 
-- **Rain / Fog** — atmospheric density
-- **Streetlight** — lamp hue
-- **Machine glow** — vending-machine emission
-- **Time of night** — midnight through 5:00 AM
-- **Passing traffic** — visible vehicle frequency and speed
-- **Ambient sound** — generated rain, hum, and traffic mix
-- **Scene seed** — puddle placement, city variation, and car timing
-- **Photo Mode** — orbit, zoom, hide the interface, and export PNG
+- **Rain / Fog** - atmospheric density
+- **Streetlight** - lamp hue
+- **Machine glow** - vending-machine emission
+- **Time of night** - midnight through 5:00 AM
+- **Passing traffic** - visible vehicle frequency and speed
+- **Ambient sound** - generated rain, hum, and traffic mix
+- **Scene seed** - puddle placement, city variation, and car timing
+- **Photo Mode** - orbit, zoom, hide the interface, and export PNG
 
 ## Tech
 
