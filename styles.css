@@ -83,6 +83,7 @@ input[type="range"]::-moz-range-thumb { width: 10px; height: 10px; border: 0; bo
 
 .hint { position: fixed; bottom: 24px; left: 50%; z-index: 3; transform: translateX(-50%); color: #666c6d; font-size: 7px; white-space: nowrap; }
 .hint span { color: #a9acab; }
+.hint .hint-mode { color: var(--accent); }
 .hint i { display: inline-block; width: 20px; height: 1px; margin: 0 9px 2px; background: #474d4e; }
 
 .photo-tools { position: fixed; z-index: 10; bottom: 28px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; }
