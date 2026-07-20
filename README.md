@@ -21,7 +21,7 @@
 The project uses JavaScript modules, so serve it through a local web server instead of opening `index.html` directly.
 
 ```bash
-[npx serve .](https://skylartrangla.github.io/tokyo.lastbus/)
+[npx serve .]
 ```
 
 Then open the local URL printed in the terminal.
@@ -33,7 +33,7 @@ Then open the local URL printed in the terminal.
 3. Under **Build and deployment**, choose **Deploy from a branch**.
 4. Select the `main` branch and `/ (root)`, then save.
 
-The site will be available at `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`.
+The site will be available at `https://skylartrangla.github.io/tokyo.lastbus/`.
 
 ## Replacing placeholders with your own models
 
