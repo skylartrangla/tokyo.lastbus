@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05070a" />
+    <meta
+      name="description"
+      content="Last Bus — a procedural Tokyo night-scene experiment built with Three.js."
+    />
+    <title>Last Bus — Procedural Night Scene</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="scene" aria-label="Interactive 3D Tokyo bus stop at night"></div>
+
+    <header class="title-card">
+      <p class="eyebrow">PROCEDURAL NIGHT STUDY · TOKYO</p>
+      <h1>LAST BUS</h1>
+      <div class="route-line">
+        <span>深夜</span>
+        <i></i>
+        <span id="clock">00:42</span>
+      </div>
+    </header>
+
+    <button id="toggle-panel" class="icon-button panel-toggle" aria-label="Toggle controls" aria-expanded="true">
+      <span></span><span></span><span></span>
+    </button>
+
+    <aside id="panel" class="control-panel">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">SCENE CONTROL</p>
+          <h2>Weather & mood</h2>
+        </div>
+        <span class="live-dot">LIVE</span>
+      </div>
+
+      <label class="control-row">
+        <span><b>Rain</b><output id="rain-output">55%</output></span>
+        <input id="rain" type="range" min="0" max="100" value="55" />
+      </label>
+
+      <label class="control-row">
+        <span><b>Fog</b><output id="fog-output">38%</output></span>
+        <input id="fog" type="range" min="0" max="100" value="38" />
+      </label>
+
+      <div class="control-row split-row">
+        <label>
+          <span><b>Streetlight</b></span>
+          <input id="street-color" type="color" value="#ffb15c" aria-label="Streetlight color" />
+        </label>
+        <label>
+          <span><b>Machine glow</b></span>
+          <input id="vending-glow" type="range" min="0" max="100" value="72" aria-label="Vending machine glow" />
+        </label>
+      </div>
+
+      <label class="control-row">
+        <span><b>Time of night</b><output id="time-output">00:42</output></span>
+        <input id="time" type="range" min="0" max="300" value="42" />
+        <span class="range-ends"><em>00:00</em><em>05:00</em></span>
+      </label>
+
+      <label class="control-row">
+        <span><b>Passing traffic</b><output id="traffic-output">Occasional</output></span>
+        <input id="traffic" type="range" min="0" max="100" value="34" />
+      </label>
+
+      <label class="control-row">
+        <span><b>Ambient sound</b><output id="sound-output">Off</output></span>
+        <input id="sound" type="range" min="0" max="100" value="0" />
+      </label>
+
+      <div class="seed-box">
+        <div>
+          <span>SCENE SEED</span>
+          <strong id="seed-value">NIGHT-042</strong>
+        </div>
+        <button id="randomize" class="square-button" aria-label="Randomize scene" title="Randomize scene">↻</button>
+      </div>
+
+      <button id="photo-mode" class="mode-button">
+        <span>⌗</span>
+        <span><b>Enter Photo Mode</b><small>Unlock camera · hide interface</small></span>
+      </button>
+    </aside>
+
+    <div class="hint"><span>DRAG</span> LOOK AROUND <i></i> <span>SCROLL</span> ZOOM</div>
+
+    <div id="photo-tools" class="photo-tools" hidden>
+      <button id="save-frame">SAVE FRAME</button>
+      <button id="exit-photo">EXIT PHOTO MODE</button>
+    </div>
+
+    <div id="loading" class="loading-screen">
+      <div class="loading-mark">終</div>
+      <p>WAITING FOR THE LAST BUS</p>
+      <span></span>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.179.1/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
